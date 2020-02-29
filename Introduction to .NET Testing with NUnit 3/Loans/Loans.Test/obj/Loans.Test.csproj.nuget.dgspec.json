@@ -1,0 +1,124 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/mertbilgic/Desktop/Learning-NUnit/Loans/Loans.Test/Loans.Test.csproj": {}
+  },
+  "projects": {
+    "/Users/mertbilgic/Desktop/Learning-NUnit/Loans/Loans.Test/Loans.Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mertbilgic/Desktop/Learning-NUnit/Loans/Loans.Test/Loans.Test.csproj",
+        "projectName": "Loans.Test",
+        "projectPath": "/Users/mertbilgic/Desktop/Learning-NUnit/Loans/Loans.Test/Loans.Test.csproj",
+        "packagesPath": "/Users/mertbilgic/.nuget/packages/",
+        "outputPath": "/Users/mertbilgic/Desktop/Learning-NUnit/Loans/Loans.Test/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/mertbilgic/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "/Users/mertbilgic/Desktop/Learning-NUnit/Loans/Loans/Loans.csproj": {
+                "projectPath": "/Users/mertbilgic/Desktop/Learning-NUnit/Loans/Loans/Loans.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.6.0-preview-20200226-03, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.12.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.16.1, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "/Users/mertbilgic/Desktop/Learning-NUnit/Loans/Loans/Loans.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mertbilgic/Desktop/Learning-NUnit/Loans/Loans/Loans.csproj",
+        "projectName": "Loans",
+        "projectPath": "/Users/mertbilgic/Desktop/Learning-NUnit/Loans/Loans/Loans.csproj",
+        "packagesPath": "/Users/mertbilgic/.nuget/packages/",
+        "outputPath": "/Users/mertbilgic/Desktop/Learning-NUnit/Loans/Loans/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/mertbilgic/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
