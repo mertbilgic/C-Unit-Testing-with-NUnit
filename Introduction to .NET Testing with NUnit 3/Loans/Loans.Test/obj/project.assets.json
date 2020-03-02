@@ -5078,11 +5078,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/mertbilgic/Desktop/Learning-NUnit/Loans/Loans.Test/Loans.Test.csproj",
+      "projectUniqueName": "/Users/mertbilgic/Desktop/C# Unit Testing with NUnit/Introduction to .NET Testing with NUnit 3/Loans/Loans.Test/Loans.Test.csproj",
       "projectName": "Loans.Test",
-      "projectPath": "/Users/mertbilgic/Desktop/Learning-NUnit/Loans/Loans.Test/Loans.Test.csproj",
+      "projectPath": "/Users/mertbilgic/Desktop/C# Unit Testing with NUnit/Introduction to .NET Testing with NUnit 3/Loans/Loans.Test/Loans.Test.csproj",
       "packagesPath": "/Users/mertbilgic/.nuget/packages/",
-      "outputPath": "/Users/mertbilgic/Desktop/Learning-NUnit/Loans/Loans.Test/obj/",
+      "outputPath": "/Users/mertbilgic/Desktop/C# Unit Testing with NUnit/Introduction to .NET Testing with NUnit 3/Loans/Loans.Test/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -5099,8 +5099,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "/Users/mertbilgic/Desktop/Learning-NUnit/Loans/Loans/Loans.csproj": {
-              "projectPath": "/Users/mertbilgic/Desktop/Learning-NUnit/Loans/Loans/Loans.csproj"
+            "/Users/mertbilgic/Desktop/C# Unit Testing with NUnit/Introduction to .NET Testing with NUnit 3/Loans/Loans/Loans.csproj": {
+              "projectPath": "/Users/mertbilgic/Desktop/C# Unit Testing with NUnit/Introduction to .NET Testing with NUnit 3/Loans/Loans/Loans.csproj"
             }
           }
         }

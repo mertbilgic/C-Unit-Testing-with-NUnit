@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/mertbilgic/Desktop/Learning-NUnit/Loans/Loans/Loans.csproj",
+      "projectUniqueName": "/Users/mertbilgic/Desktop/C# Unit Testing with NUnit/Introduction to .NET Testing with NUnit 3/Loans/Loans/Loans.csproj",
       "projectName": "Loans",
-      "projectPath": "/Users/mertbilgic/Desktop/Learning-NUnit/Loans/Loans/Loans.csproj",
+      "projectPath": "/Users/mertbilgic/Desktop/C# Unit Testing with NUnit/Introduction to .NET Testing with NUnit 3/Loans/Loans/Loans.csproj",
       "packagesPath": "/Users/mertbilgic/.nuget/packages/",
-      "outputPath": "/Users/mertbilgic/Desktop/Learning-NUnit/Loans/Loans/obj/",
+      "outputPath": "/Users/mertbilgic/Desktop/C# Unit Testing with NUnit/Introduction to .NET Testing with NUnit 3/Loans/Loans/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

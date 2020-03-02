@@ -7,3 +7,12 @@
 /Users/mertbilgic/Desktop/Learning-NUnit/Loans/Loans/obj/Debug/netcoreapp2.1/Loans.AssemblyInfo.cs
 /Users/mertbilgic/Desktop/Learning-NUnit/Loans/Loans/obj/Debug/netcoreapp2.1/Loans.dll
 /Users/mertbilgic/Desktop/Learning-NUnit/Loans/Loans/obj/Debug/netcoreapp2.1/Loans.pdb
+/Users/mertbilgic/Desktop/C# Unit Testing with NUnit/Introduction to .NET Testing with NUnit 3/Loans/Loans/bin/Debug/netcoreapp2.1/Loans.deps.json
+/Users/mertbilgic/Desktop/C# Unit Testing with NUnit/Introduction to .NET Testing with NUnit 3/Loans/Loans/bin/Debug/netcoreapp2.1/Loans.dll
+/Users/mertbilgic/Desktop/C# Unit Testing with NUnit/Introduction to .NET Testing with NUnit 3/Loans/Loans/bin/Debug/netcoreapp2.1/Loans.pdb
+/Users/mertbilgic/Desktop/C# Unit Testing with NUnit/Introduction to .NET Testing with NUnit 3/Loans/Loans/obj/Debug/netcoreapp2.1/Loans.csprojAssemblyReference.cache
+/Users/mertbilgic/Desktop/C# Unit Testing with NUnit/Introduction to .NET Testing with NUnit 3/Loans/Loans/obj/Debug/netcoreapp2.1/Loans.csproj.CoreCompileInputs.cache
+/Users/mertbilgic/Desktop/C# Unit Testing with NUnit/Introduction to .NET Testing with NUnit 3/Loans/Loans/obj/Debug/netcoreapp2.1/Loans.AssemblyInfoInputs.cache
+/Users/mertbilgic/Desktop/C# Unit Testing with NUnit/Introduction to .NET Testing with NUnit 3/Loans/Loans/obj/Debug/netcoreapp2.1/Loans.AssemblyInfo.cs
+/Users/mertbilgic/Desktop/C# Unit Testing with NUnit/Introduction to .NET Testing with NUnit 3/Loans/Loans/obj/Debug/netcoreapp2.1/Loans.dll
+/Users/mertbilgic/Desktop/C# Unit Testing with NUnit/Introduction to .NET Testing with NUnit 3/Loans/Loans/obj/Debug/netcoreapp2.1/Loans.pdb

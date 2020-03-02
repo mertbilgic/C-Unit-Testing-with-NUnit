@@ -1,7 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="829b9a17-e2b1-4fcb-9549-dfd4f7739956" name="Default Changelist" comment="" />
+    <list default="true" id="829b9a17-e2b1-4fcb-9549-dfd4f7739956" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Loans.Test/MonthlyRepaymentComparisonShould.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Loans/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Loans/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Loans/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Loans/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loans.Test/ProductComparerShould.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Loans.Test/ProductComparerShould.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loans.Test/bin/Debug/netcoreapp2.2/Loans.Test.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Loans.Test/bin/Debug/netcoreapp2.2/Loans.Test.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loans.Test/bin/Debug/netcoreapp2.2/Loans.Test.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Loans.Test/bin/Debug/netcoreapp2.2/Loans.Test.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loans.Test/bin/Debug/netcoreapp2.2/Loans.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Loans.Test/bin/Debug/netcoreapp2.2/Loans.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loans.Test/bin/Debug/netcoreapp2.2/Loans.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Loans.Test/bin/Debug/netcoreapp2.2/Loans.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loans.Test/bin/Debug/netcoreapp2.2/nunit_random_seed.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/Loans.Test/bin/Debug/netcoreapp2.2/nunit_random_seed.tmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loans.Test/obj/Debug/netcoreapp2.2/Loans.Test.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Loans.Test/obj/Debug/netcoreapp2.2/Loans.Test.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loans.Test/obj/Debug/netcoreapp2.2/Loans.Test.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Loans.Test/obj/Debug/netcoreapp2.2/Loans.Test.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loans.Test/obj/Debug/netcoreapp2.2/Loans.Test.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Loans.Test/obj/Debug/netcoreapp2.2/Loans.Test.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loans.Test/obj/Debug/netcoreapp2.2/Loans.Test.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Loans.Test/obj/Debug/netcoreapp2.2/Loans.Test.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loans.Test/obj/Debug/netcoreapp2.2/Loans.Test.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Loans.Test/obj/Debug/netcoreapp2.2/Loans.Test.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loans.Test/obj/Debug/netcoreapp2.2/Loans.Test.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Loans.Test/obj/Debug/netcoreapp2.2/Loans.Test.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loans.Test/obj/Loans.Test.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Loans.Test/obj/Loans.Test.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loans.Test/obj/Loans.Test.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Loans.Test/obj/Loans.Test.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loans.Test/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Loans.Test/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loans.Test/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Loans.Test/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loans/bin/Debug/netcoreapp2.1/Loans.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Loans/bin/Debug/netcoreapp2.1/Loans.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loans/bin/Debug/netcoreapp2.1/Loans.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Loans/bin/Debug/netcoreapp2.1/Loans.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loans/obj/Debug/netcoreapp2.1/Loans.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Loans/obj/Debug/netcoreapp2.1/Loans.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loans/obj/Debug/netcoreapp2.1/Loans.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Loans/obj/Debug/netcoreapp2.1/Loans.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loans/obj/Debug/netcoreapp2.1/Loans.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Loans/obj/Debug/netcoreapp2.1/Loans.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loans/obj/Debug/netcoreapp2.1/Loans.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Loans/obj/Debug/netcoreapp2.1/Loans.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loans/obj/Debug/netcoreapp2.1/Loans.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Loans/obj/Debug/netcoreapp2.1/Loans.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loans/obj/Loans.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Loans/obj/Loans.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loans/obj/Loans.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Loans/obj/Loans.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loans/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Loans/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loans/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Loans/obj/project.packagespec.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,18 +41,22 @@
   <component name="FavoritesManager">
     <favorites_list name="Loans" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Loans/Domain/ValueObject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Loans/Domain/Entity.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Loans/Domain/Applications/ProductComparer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Loans/Domain/Applications/LoanRepaymentCalculator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Loans/Domain/Applications/LoanTerm.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Loans/Domain/Applications/MonthlyRepaymentComparison.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Loans/Domain/Applications/LoanAmount.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Loans/Domain/Applications/LoanProduct.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/.local/share/Symbols/src/nunit/nunit/c933a883ea25263ec575a654dae69fa38000edd9/src/NUnitFramework/framework/Is.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Loans/Domain/Entity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Loans/Domain/ValueObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Loans.Test/LoanTermShould.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Loans.Test/ProductComparerShould.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Loans/Domain/Applications/LoanProduct.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/.local/share/Symbols/src/nunit/nunit/c933a883ea25263ec575a654dae69fa38000edd9/src/NUnitFramework/framework/Is.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Loans/Domain/Applications/LoanAmount.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Loans/Domain/Applications/ProductComparer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Loans.Test/MonthlyRepaymentComparisonShould.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Loans/Domain/Applications/MonthlyRepaymentComparison.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Loans/Domain/Applications/LoanTerm.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -30,11 +65,14 @@
         <option value="$PROJECT_DIR$/Loans.Test/test.cs" />
         <option value="$PROJECT_DIR$/Loans.Test/LoanTermShould.cs" />
         <option value="$PROJECT_DIR$/Loans/Domain/Applications/LoanTerm.cs" />
+        <option value="$PROJECT_DIR$/Loans.Test/MountlyRepaymentComparisonShould.cs" />
+        <option value="$PROJECT_DIR$/Loans.Test/MonthlyRepaymentComparisonShould.cs" />
         <option value="$PROJECT_DIR$/Loans.Test/ProductComparerShould.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1YQUAdnI6ba9I3xFhPar65PoUsG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -43,6 +81,7 @@
   <component name="PropertiesComponent">
     <property name="Rider.SolutionExplorerActivator" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TWShift.3" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys_rider" />
   </component>
@@ -60,6 +99,8 @@
       <workItem from="1582874309929" duration="6367000" />
       <workItem from="1582956326186" duration="6266000" />
       <workItem from="1583009068727" duration="993000" />
+      <workItem from="1583098356574" duration="599000" />
+      <workItem from="1583133740705" duration="1299000" />
     </task>
     <servers />
   </component>
@@ -68,6 +109,19 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="320" y="189" key="Rider.ProjectTemplateDialog.Size" timestamp="1582874333149">
       <screen x="0" y="0" width="1440" height="900" />
