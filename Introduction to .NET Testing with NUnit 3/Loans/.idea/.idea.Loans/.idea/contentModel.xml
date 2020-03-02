@@ -35,9 +35,15 @@
       <e p="Loans.sln" t="IncludeFlat" />
       <e p="Loans.Test" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Data.csv" t="Include" />
+        <e p="LoanRepaymentCalculatorShould.cs" t="Include" />
         <e p="Loans.Test.csproj" t="IncludeRecursive" />
         <e p="LoanTermShould.cs" t="Include" />
         <e p="MonthlyRepaymentComparisonShould.cs" t="Include" />
+        <e p="MonthlyRepaymentCsvData.cs" t="Include" />
+        <e p="MonthlyRepaymentGreaterThanZeroConstraint.cs" t="Include" />
+        <e p="MonthlyRepaymentsTestDataWithReturn.cs" t="Include" />
+        <e p="MonthlyRepaymentTestData.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp2.2" t="Include">
@@ -46,6 +52,7 @@
           </e>
         </e>
         <e p="ProductComparerShould.cs" t="Include" />
+        <e p="ProductComparisonAttribute.cs" t="Include" />
       </e>
       <e p="packages" t="ExcludeRecursive" />
     </e>

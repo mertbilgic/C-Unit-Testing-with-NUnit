@@ -44,7 +44,8 @@ namespace Loans.Test
         
         
         [Test]
-        [Category("Product Comparison")]
+        //[Category("Product Comparison")]
+        [ProductComparison]
         public void ReturnCorrectNumberOfComparisons()
         {
             List<MonthlyRepaymentComparison> comparisons =
@@ -89,12 +90,16 @@ namespace Loans.Test
                     .And 
                     .Property("MonthlyRepayment").GreaterThan(0));
             
-            Assert.That(comparisons,Has.Exactly(1)
-                .Matches<MonthlyRepaymentComparison>(
-              
-                    item => item.ProductName == "a" &&
-                                                               item.InterestRate == 1 &&
-                                                               item.MonthlyRepayment > 0));
+            // Assert.That(comparisons,Has.Exactly(1)
+            //     .Matches<MonthlyRepaymentComparison>(
+            //   
+            //         item => item.ProductName == "a" &&
+            //                                                    item.InterestRate == 1 &&
+            //                                                    item.MonthlyRepayment > 0));
+            
+            Assert.That(comparisons,
+                Has.Exactly(1)
+                            .Matches(new MonthlyRepaymentGreaterThanZeroConstraint("a",1)));
         }
 
         [Test]

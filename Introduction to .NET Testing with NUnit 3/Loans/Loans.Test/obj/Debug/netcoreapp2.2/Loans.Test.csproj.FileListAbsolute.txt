@@ -20,6 +20,7 @@
 /Users/mertbilgic/Desktop/C# Unit Testing with NUnit/Introduction to .NET Testing with NUnit 3/Loans/Loans.Test/bin/Debug/netcoreapp2.2/NUnit3.TestAdapter.pdb
 /Users/mertbilgic/Desktop/C# Unit Testing with NUnit/Introduction to .NET Testing with NUnit 3/Loans/Loans.Test/bin/Debug/netcoreapp2.2/nunit.engine.dll
 /Users/mertbilgic/Desktop/C# Unit Testing with NUnit/Introduction to .NET Testing with NUnit 3/Loans/Loans.Test/bin/Debug/netcoreapp2.2/nunit.engine.api.dll
+/Users/mertbilgic/Desktop/C# Unit Testing with NUnit/Introduction to .NET Testing with NUnit 3/Loans/Loans.Test/bin/Debug/netcoreapp2.2/Data.csv
 /Users/mertbilgic/Desktop/C# Unit Testing with NUnit/Introduction to .NET Testing with NUnit 3/Loans/Loans.Test/bin/Debug/netcoreapp2.2/Loans.Test.deps.json
 /Users/mertbilgic/Desktop/C# Unit Testing with NUnit/Introduction to .NET Testing with NUnit 3/Loans/Loans.Test/bin/Debug/netcoreapp2.2/Loans.Test.runtimeconfig.json
 /Users/mertbilgic/Desktop/C# Unit Testing with NUnit/Introduction to .NET Testing with NUnit 3/Loans/Loans.Test/bin/Debug/netcoreapp2.2/Loans.Test.runtimeconfig.dev.json

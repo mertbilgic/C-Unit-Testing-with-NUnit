@@ -3,7 +3,8 @@ using NUnit.Framework;
 
 namespace Loans.Test
 {
-    [Category("Product Comparison")]
+    //[Category("Product Comparison")]
+    [ProductComparison]
     public class MonthlyRepaymentComparisonShould
     {
         [Test]
