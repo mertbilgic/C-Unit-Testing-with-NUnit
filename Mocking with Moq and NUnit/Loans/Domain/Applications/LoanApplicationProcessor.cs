@@ -38,25 +38,44 @@ namespace Loans.Domain.Applications
 
             _identityVerifier.Initialize();
 
-            var isValidIdentity = _identityVerifier.Validate(application.GetApplicantName(), 
-                                                             application.GetApplicantAge(), 
-                                                             application.GetApplicantAddress());
+            // var isValidIdentity = _identityVerifier.Validate(application.GetApplicantName(), 
+            //                                                  application.GetApplicantAge(), 
+            //                                                  application.GetApplicantAddress());
+            
+            // _identityVerifier.Validate(application.GetApplicantName(), 
+            //     application.GetApplicantAge(), 
+            //     application.GetApplicantAddress(),
+            //     out var isValidIdentity );
+            //
+            // if (!isValidIdentity)
+            // {
+            //     application.Decline();
+            //     return;
+            // }
 
-            if (!isValidIdentity)
+
+            IdentityVerificationStatus status = null;
+            
+            _identityVerifier.Validate(application.GetApplicantName(), 
+                                       application.GetApplicantAge(), 
+                                       application.GetApplicantAddress(),
+                                       ref status);
+
+            if (!status.Passed)
             {
                 application.Decline();
                 return;
             }
 
 
-            _creditScorer.CalculateScore(application.GetApplicantName(), 
-                                         application.GetApplicantAddress());
-
-            if (_creditScorer.Score < MinimumCreditScore)
-            {
-                application.Decline();
-                return;
-            }
+            // _creditScorer.CalculateScore(application.GetApplicantName(), 
+            //                              application.GetApplicantAddress());
+            //
+            // if (_creditScorer.Score < MinimumCreditScore)
+            // {
+            //     application.Decline();
+            //     return;
+            // }
 
             application.Accept();
         }
