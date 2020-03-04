@@ -49,11 +49,6 @@ namespace Loans.Tests
             
             var mockIdentityVerifier = new Mock<IIdentityVerifier>();
             
-            // mockIdentityVerifier.Setup(x => x.Validate("Sarah",
-            //         25,
-            //         "133 Pluralsight Drive, Draper, Utah"))
-            //     .Returns(true);
-            
             //Değişken tipine baktığı için eşlemenin yapıldığı fonskiyona dikkat edilmeldir.
             // var mockIdentityVerifier = new Mock<IIdentityVerifier>();
             // mockIdentityVerifier.Setup(x => x.Validate(It.IsAny<string>(),
@@ -67,26 +62,49 @@ namespace Loans.Tests
             //         "133 Pluralsight Drive, Draper, Utah",
             //     out isValidOutValue));
 
-            mockIdentityVerifier
-                .Setup(x => x.Validate("Sarah",
+            // mockIdentityVerifier
+            //     .Setup(x => x.Validate("Sarah",
+            //         25,
+            //         "133 Pluralsight Drive, Draper, Utah",
+            //         ref It.Ref<IdentityVerificationStatus>.IsAny))
+            //     .Callback(new ValidateCallBack(
+            //     (string applicantName,
+            //             int applicantAge,
+            //             string applicantAddress,
+            //             ref IdentityVerificationStatus status) =>
+            //         status = new IdentityVerificationStatus(true)));
+            
+            mockIdentityVerifier.Setup(x => x.Validate("Sarah",
                     25,
-                    "133 Pluralsight Drive, Draper, Utah",
-                    ref It.Ref<IdentityVerificationStatus>.IsAny))
-                .Callback(new ValidateCallBack(
-                (string applicantName,
-                        int applicantAge,
-                        string applicantAddress,
-                        ref IdentityVerificationStatus status) =>
-                    status = new IdentityVerificationStatus(true)));
+                    "133 Pluralsight Drive, Draper, Utah"))
+                .Returns(true);
                 
             
             var mockCreditScorer = new Mock<ICreditScorer>();
+            
+            // Birden fazla izlememiz gereken property varsa bu yöntemi kullanabiliriz.
+            //Setup'ın altında kullanırsak ayarladığımız return 300 işlemini bozar ve test başarısız olur
+            // mockCreditScorer.SetupAllProperties();
+            
+            mockCreditScorer.Setup(x => x.ScoreResult.ScoreValue.Score).Returns(300);
+            mockCreditScorer.SetupProperty(x => x.Cout,10);
+
+            // var mockScoreValue = new Mock<ScoreValue>();
+            // mockScoreValue.Setup(x => x.Score).Returns(300);
+            //
+            // var mockScoreResult = new Mock<ScoreResult>();
+            // mockScoreResult.Setup(x => x.ScoreValue).Returns(mockScoreValue.Object);
+            //
+            // mockCreditScorer.Setup(x => x.ScoreResult).Returns(mockScoreResult.Object);
+            
+            
 
             var sut = new LoanApplicationProcessor(mockIdentityVerifier.Object,mockCreditScorer.Object);
 
             sut.Process(application);
 
             Assert.That(application.GetIsAccepted(), Is.True);
+            Assert.That(mockCreditScorer.Object.Cout,Is.EqualTo(11));
         }
 
         [Test]
