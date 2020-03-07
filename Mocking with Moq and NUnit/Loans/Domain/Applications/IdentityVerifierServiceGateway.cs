@@ -4,7 +4,12 @@ namespace Loans.Domain.Applications
 {
     public class IdentityVerifierServiceGateway : IIdentityVerifier
     {
+        private readonly INowProvider _nowProvider;
         public DateTime LastCheckTime { get; private set; }
+
+        public IdentityVerifierServiceGateway(INowProvider nowProvider){
+            _nowProvider = nowProvider;
+        }
 
         public void Initialize()
         {
@@ -15,10 +20,15 @@ namespace Loans.Domain.Applications
         {
             Connect();
             var isValidIdentity = CallService(applicantName, applicantAge, applicantAddress);
-            LastCheckTime = DateTime.Now;
+            LastCheckTime = _nowProvider.GetNow();
             Disconnect();
 
             return isValidIdentity;
+        }
+
+        protected  virtual DateTime GetCurrentTime() 
+        { 
+            return DateTime.Now;
         }
 
 
@@ -28,7 +38,7 @@ namespace Loans.Domain.Applications
         }
 
 
-        private bool CallService(string applicantName, int applicantAge, string applicantAddress)
+        protected virtual bool CallService(string applicantName, int applicantAge, string applicantAddress)
         {
             // Make call to external service, interpret the response, and return result
 

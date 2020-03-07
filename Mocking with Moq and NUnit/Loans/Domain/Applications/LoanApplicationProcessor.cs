@@ -10,15 +10,15 @@ namespace Loans.Domain.Applications
 
         private readonly IIdentityVerifier _identityVerifier;
         private readonly ICreditScorer _creditScorer;
-        
 
-        public LoanApplicationProcessor(IIdentityVerifier identityVerifier, 
-                                        ICreditScorer creditScorer)
+
+        public LoanApplicationProcessor(IIdentityVerifier identityVerifier,
+            ICreditScorer creditScorer)
         {
-            _identityVerifier = 
+            _identityVerifier =
                 identityVerifier ?? throw new ArgumentNullException(nameof(identityVerifier));
 
-            _creditScorer = 
+            _creditScorer =
                 creditScorer ?? throw new ArgumentNullException(nameof(creditScorer));
         }
 
@@ -37,17 +37,17 @@ namespace Loans.Domain.Applications
             }
 
             _identityVerifier.Initialize();
-            
+
             // _identityVerifier.Validate(application.GetApplicantName(), 
             //     application.GetApplicantAge(), 
             //     application.GetApplicantAddress(),
             //     out var isValidIdentity );
 
-            var isValidIdentity = _identityVerifier.Validate(application.GetApplicantName(), 
-                                                             application.GetApplicantAge(), 
-                                                             application.GetApplicantAddress());
-            
-            
+            var isValidIdentity = _identityVerifier.Validate(application.GetApplicantName(),
+                application.GetApplicantAge(),
+                application.GetApplicantAddress());
+
+
             if (!isValidIdentity)
             {
                 application.Decline();
@@ -68,11 +68,19 @@ namespace Loans.Domain.Applications
             //     return;
             // }
 
+            try
+            {
+                _creditScorer.CalculateScore(application.GetApplicantName(),
+                    application.GetApplicantAddress());
+            }
+            catch
+            {
+                application.Decline();
+                return;
+            }
 
-            _creditScorer.CalculateScore(application.GetApplicantName(), 
-                                         application.GetApplicantAddress());
             _creditScorer.Cout++;
-            
+
             if (_creditScorer.ScoreResult.ScoreValue.Score < MinimumCreditScore)
             {
                 application.Decline();

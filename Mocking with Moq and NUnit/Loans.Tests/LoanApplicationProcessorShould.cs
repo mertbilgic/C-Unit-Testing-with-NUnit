@@ -2,6 +2,7 @@
 using Loans.Domain.Applications;
 using NUnit.Framework;
 using  Moq;
+using Moq.Protected;
 namespace Loans.Tests
 {
     public class LoanApplicationProcessorShould
@@ -47,7 +48,7 @@ namespace Loans.Tests
                 "133 Pluralsight Drive, Draper, Utah",
                 65_000);
             
-            var mockIdentityVerifier = new Mock<IIdentityVerifier>();
+            var mockIdentityVerifier = new Mock<IIdentityVerifier>(MockBehavior.Strict);
             
             //Değişken tipine baktığı için eşlemenin yapıldığı fonskiyona dikkat edilmeldir.
             // var mockIdentityVerifier = new Mock<IIdentityVerifier>();
@@ -78,6 +79,7 @@ namespace Loans.Tests
                     25,
                     "133 Pluralsight Drive, Draper, Utah"))
                 .Returns(true);
+            mockIdentityVerifier.Setup(x => x.Initialize());
                 
             
             var mockCreditScorer = new Mock<ICreditScorer>();
@@ -178,6 +180,94 @@ namespace Loans.Tests
             
             mockCreditScorer.Verify(x=>x.CalculateScore("Sarah",
                 "133 Pluralsight Drive, Draper, Utah"),Times.Once);
+        }
+        [Test]
+        public void DeclineWhenCreditScoreError()
+        {
+            LoanProduct product = new LoanProduct(99, "Loan", 5.25m);
+            LoanAmount amount = new LoanAmount("USD", 200_000);
+            var application = new LoanApplication(42,
+                product,
+                amount,
+                "Sarah",
+                25,
+                "133 Pluralsight Drive, Draper, Utah",
+                65_000);
+
+            var mockIdentityVerifier = new Mock<IIdentityVerifier>();
+            mockIdentityVerifier.Setup(x => x.Validate("Sarah",
+                    25,
+                    "133 Pluralsight Drive, Draper, Utah"))
+                .Returns(true);
+
+
+
+            var mockCreditScorer = new Mock<ICreditScorer>();
+            //mockCreditScorer.Setup(x => x.CalculateScore(It.IsAny<string>(), It.IsAny<string>()))
+            //                .Throws<InvalidOperationException>();
+
+            mockCreditScorer.Setup(x => x.CalculateScore(It.IsAny<string>(), It.IsAny<string>()))
+                .Throws(new InvalidOperationException("Test"));
+
+            var sut = new LoanApplicationProcessor(mockIdentityVerifier.Object,
+                mockCreditScorer.Object);
+
+            sut.Process(application);
+
+            Assert.That(application.GetIsAccepted(), Is.False);
+        }
+
+        interface IdentityVerifierServiceGatewayProtectedMembers
+        {
+            DateTime GetCurrentTime();
+            bool CallService(string applicantName, int applicantAge, string applicantAddress);
+
+        }
+        
+        [Test]
+        public void AcceptUsingPartialMock()
+        {
+            LoanProduct product = new LoanProduct(99, "Loan", 5.25m);
+            LoanAmount amount = new LoanAmount("USD", 200_000);
+            var application = new LoanApplication(42,
+                product,
+                amount,
+                "Sarah",
+                25,
+                "133 Pluralsight Drive, Draper, Utah",
+                65_000);
+
+            var mockIdentityVerifier = new Mock<IdentityVerifierServiceGateway>();
+            
+            mockIdentityVerifier.Protected().Setup<bool>("CallService",
+                "Sarah",
+                25,
+                "133 Pluralsight Drive, Draper, Utah").Returns(true);
+
+            var expectedTime = new DateTime(2000, 1, 1);
+            
+            var mockNowProvider = new Mock<INowProvider>();
+            mockNowProvider.Setup(x=>x.GetNow()).Returns(expectedTime);
+
+            // mockIdentityVerifier.Protected().Setup<DateTime>("GetCurrentTime")
+            //     .Returns(expectedTime);
+            
+            mockIdentityVerifier.Protected()
+                .As<IdentityVerifierServiceGatewayProtectedMembers>()
+                .Setup(x => x.GetCurrentTime())
+                .Returns(expectedTime);
+
+            var mockCreditScorer = new Mock<ICreditScorer>();
+            mockCreditScorer.Setup(x => x.ScoreResult.ScoreValue.Score).Returns(300);
+            
+
+            var sut = new LoanApplicationProcessor(mockIdentityVerifier.Object,
+                mockCreditScorer.Object);
+
+            sut.Process(application);
+
+            Assert.That(application.GetIsAccepted(), Is.True);
+            Assert.That(mockIdentityVerifier.Object.LastCheckTime,Is.EqualTo(expectedTime));
         }
 
         [Test]
